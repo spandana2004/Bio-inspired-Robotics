@@ -1,0 +1,252 @@
+{
+  "summary": {
+    "EGO_d0.0_n0.0": {
+      "n": 30,
+      "succ_mean": 0.7333333333333333,
+      "succ_std": 0.44221663871405337,
+      "path_eff_mean": 0.7482666666666666,
+      "path_eff_std": 0.4174525069460664,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "GEO_d0.0_n0.0": {
+      "n": 30,
+      "succ_mean": 0.9666666666666667,
+      "succ_std": 0.1795054935711501,
+      "path_eff_mean": 0.1654224845061312,
+      "path_eff_std": 0.06763395984395543,
+      "straight_mean": 1.0,
+      "straight_std": 0.0
+    },
+    "HYB_d0.0_n0.0": {
+      "n": 30,
+      "succ_mean": 0.9666666666666667,
+      "succ_std": 0.1795054935711501,
+      "path_eff_mean": 0.17337536505337411,
+      "path_eff_std": 0.07736433427678305,
+      "straight_mean": 1.0,
+      "straight_std": 0.0
+    },
+    "EGO_d0.0_n0.05": {
+      "n": 30,
+      "succ_mean": 0.8,
+      "succ_std": 0.4,
+      "path_eff_mean": 0.8112,
+      "path_eff_std": 0.3776,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "GEO_d0.0_n0.05": {
+      "n": 30,
+      "succ_mean": 0.9666666666666667,
+      "succ_std": 0.1795054935711501,
+      "path_eff_mean": 0.13265828912422292,
+      "path_eff_std": 0.054554143186698996,
+      "straight_mean": 1.0,
+      "straight_std": 0.0
+    },
+    "HYB_d0.0_n0.05": {
+      "n": 30,
+      "succ_mean": 0.9666666666666667,
+      "succ_std": 0.1795054935711501,
+      "path_eff_mean": 0.14279179010992238,
+      "path_eff_std": 0.06370129146058508,
+      "straight_mean": 1.0,
+      "straight_std": 0.0
+    },
+    "EGO_d0.0_n0.1": {
+      "n": 30,
+      "succ_mean": 0.7333333333333333,
+      "succ_std": 0.44221663871405337,
+      "path_eff_mean": 0.7482666666666666,
+      "path_eff_std": 0.4174525069460664,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "GEO_d0.0_n0.1": {
+      "n": 30,
+      "succ_mean": 0.9666666666666667,
+      "succ_std": 0.1795054935711501,
+      "path_eff_mean": 0.1643215154926983,
+      "path_eff_std": 0.08119129242856771,
+      "straight_mean": 1.0,
+      "straight_std": 0.0
+    },
+    "HYB_d0.0_n0.1": {
+      "n": 30,
+      "succ_mean": 0.9666666666666667,
+      "succ_std": 0.17950549357115014,
+      "path_eff_mean": 0.16534746190943525,
+      "path_eff_std": 0.06484143578776133,
+      "straight_mean": 1.0,
+      "straight_std": 0.0
+    },
+    "EGO_d0.03_n0.0": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "GEO_d0.03_n0.0": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "HYB_d0.03_n0.0": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "EGO_d0.03_n0.05": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "GEO_d0.03_n0.05": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "HYB_d0.03_n0.05": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "EGO_d0.03_n0.1": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "GEO_d0.03_n0.1": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "HYB_d0.03_n0.1": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "EGO_d0.07_n0.0": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "GEO_d0.07_n0.0": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "HYB_d0.07_n0.0": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "EGO_d0.07_n0.05": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "GEO_d0.07_n0.05": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "HYB_d0.07_n0.05": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "EGO_d0.07_n0.1": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "GEO_d0.07_n0.1": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    },
+    "HYB_d0.07_n0.1": {
+      "n": 30,
+      "succ_mean": 0.0,
+      "succ_std": 0.0,
+      "path_eff_mean": NaN,
+      "path_eff_std": NaN,
+      "straight_mean": NaN,
+      "straight_std": NaN
+    }
+  },
+  "astar_lengths": {
+    "0.0": 28,
+    "0.03": null,
+    "0.07": null
+  }
+}
