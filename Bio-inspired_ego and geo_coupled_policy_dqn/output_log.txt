@@ -1,0 +1,55 @@
+Training coupled DQN...
+Ep 50/2000 | Avg (50): -1492.57 | eps: 0.778
+Ep 100/2000 | Avg (50): -582.37 | eps: 0.606
+Ep 150/2000 | Avg (50): -117.60 | eps: 0.471
+Ep 200/2000 | Avg (50): 64.57 | eps: 0.367
+Ep 250/2000 | Avg (50): 16.08 | eps: 0.286
+Ep 300/2000 | Avg (50): -297.74 | eps: 0.222
+Ep 350/2000 | Avg (50): -230.74 | eps: 0.173
+Ep 400/2000 | Avg (50): -149.17 | eps: 0.135
+Ep 450/2000 | Avg (50): -59.70 | eps: 0.105
+Ep 500/2000 | Avg (50): -141.03 | eps: 0.082
+Ep 550/2000 | Avg (50): -123.30 | eps: 0.063
+Ep 600/2000 | Avg (50): -53.84 | eps: 0.050
+Ep 650/2000 | Avg (50): -75.60 | eps: 0.050
+Ep 700/2000 | Avg (50): -53.04 | eps: 0.050
+Ep 750/2000 | Avg (50): -62.83 | eps: 0.050
+Ep 800/2000 | Avg (50): -78.69 | eps: 0.050
+Ep 850/2000 | Avg (50): -97.74 | eps: 0.050
+Ep 900/2000 | Avg (50): -4.27 | eps: 0.050
+Ep 950/2000 | Avg (50): 96.34 | eps: 0.050
+Ep 1000/2000 | Avg (50): 67.31 | eps: 0.050
+Ep 1050/2000 | Avg (50): 209.58 | eps: 0.050
+Ep 1100/2000 | Avg (50): 212.91 | eps: 0.050
+Ep 1150/2000 | Avg (50): 210.11 | eps: 0.050
+Ep 1200/2000 | Avg (50): 212.11 | eps: 0.050
+Ep 1250/2000 | Avg (50): 209.30 | eps: 0.050
+Ep 1300/2000 | Avg (50): 214.51 | eps: 0.050
+Ep 1350/2000 | Avg (50): 211.31 | eps: 0.050
+Ep 1400/2000 | Avg (50): 208.91 | eps: 0.050
+Ep 1450/2000 | Avg (50): 213.31 | eps: 0.050
+Ep 1500/2000 | Avg (50): 208.91 | eps: 0.050
+Ep 1550/2000 | Avg (50): 210.51 | eps: 0.050
+Ep 1600/2000 | Avg (50): 213.31 | eps: 0.050
+Ep 1650/2000 | Avg (50): 212.51 | eps: 0.050
+Ep 1700/2000 | Avg (50): 214.11 | eps: 0.050
+Ep 1750/2000 | Avg (50): 214.52 | eps: 0.050
+Ep 1800/2000 | Avg (50): 212.11 | eps: 0.050
+Ep 1850/2000 | Avg (50): 212.91 | eps: 0.050
+Ep 1900/2000 | Avg (50): 214.11 | eps: 0.050
+Ep 1950/2000 | Avg (50): 211.32 | eps: 0.050
+Ep 2000/2000 | Avg (50): 210.51 | eps: 0.050
+Training completed. Model saved to Coupled_DQN_Output/coupled_dqn.pth
+Saved learning curve to Coupled_DQN_Output/coupled_learning_curve.png
+Eval 1: reward=218.5 reached=True steps=28
+Saved final path to Coupled_DQN_Output/coupled_final_path_eval_1.png
+Eval 2: reward=218.5 reached=True steps=28
+Saved final path to Coupled_DQN_Output/coupled_final_path_eval_2.png
+Eval 3: reward=218.5 reached=True steps=28
+Saved final path to Coupled_DQN_Output/coupled_final_path_eval_3.png
+Eval 4: reward=218.5 reached=True steps=28
+Saved final path to Coupled_DQN_Output/coupled_final_path_eval_4.png
+Eval 5: reward=218.5 reached=True steps=28
+Saved final path to Coupled_DQN_Output/coupled_final_path_eval_5.png
+Successes: 5/5 | Avg reward: 218.53
+Saved policy map to Coupled_DQN_Output/coupled_policy_map.png
