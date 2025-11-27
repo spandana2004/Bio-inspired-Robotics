@@ -38,8 +38,8 @@ A trained policy is demonstrated in real time using the MuJoCo viewer.
 
 ```text
 .
-├── maze_q_learning.py     # Main training + simulation script
-├── simulation_video.mp4  # (Optional) MuJoCo demo recording
+├── gridworld_final.py     # Main training + simulation script
+├── images of training 
 └── README.md             # Project documentation
 ````
 
