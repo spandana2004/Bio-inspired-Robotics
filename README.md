@@ -1,4 +1,4 @@
-# **Bio-Inspired Robotics**
+# **Bio-inspired-Robotics**
 
 This repository is a **comprehensive research workspace for bio-inspired navigation and reinforcement learning**, containing **multiple independent but related projects** that explore:
 
