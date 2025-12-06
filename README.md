@@ -141,3 +141,6 @@ mujoco
 Each folder may require additional packages — refer to the **individual `README.md` files** for exact dependency lists.
 
 ---
+
+## NOTE
+Please make sure the file path is given correctly according to how you saved them on your system or directory.
