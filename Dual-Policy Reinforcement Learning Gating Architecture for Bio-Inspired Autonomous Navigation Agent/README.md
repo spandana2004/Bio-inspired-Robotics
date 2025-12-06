@@ -44,8 +44,10 @@ Dual-Policy Reinforcement Learning Gating Architecture for Bio-Inspired Autonomo
 │   ├── policy_map_train_maze_3.png
 │   ├── ... (up to maze_10)
 │
-│   ├── experimental_results/              ← ADDED FROM ZIP
-│   │
+│── Hazard_density_based_simulation/          
+│   │── gating_final_hazards.py
+│   │── angles_to_goal.csv
+|   │── ego_vector_table.csv
 │   │── hazard_comparison_run1/
 │   │   ├── density_0.10/
 │   │   │   ├── learning_curve_reward.png
@@ -55,7 +57,9 @@ Dual-Policy Reinforcement Learning Gating Architecture for Bio-Inspired Autonomo
 │   │   │   ├── policy_dist_curve.png
 │   │   │   ├── policy_map_train_maze_1.png ... maze_10.png
 │   │   ├── density_0.20/
+|   |   ├── density_0.30/
 │   │   ├── density_0.40/
+|   |   ├── density_0.50/
 │   │   └── density_0.60/
 │   │
 │   │── hazard_comparison_run2/
@@ -63,9 +67,6 @@ Dual-Policy Reinforcement Learning Gating Architecture for Bio-Inspired Autonomo
 │   │
 │   │── hazard_comparison_run3/
 │       └── (same density folders and files)
-│
-│   └── final_iitm_simulation/             ← UNZIPPED ZIP CONTENTS
-│       └── (all runs + density plots, trajectories, policy maps)
 │
 └── README.md
 ```
@@ -167,8 +168,14 @@ python geocentric_final_trajectory_generator.py
 cd Gating_Policy_Network
 python gating_policy.py
 ```
-
 This loads the trained DQN (`gating_model_pytorch.pth`) and executes all evaluation routines.
+
+## Hazard_density_based_simulation
+
+```bash
+cd Hazard_density_based_simulation
+python gating_final_hazards.py
+```
 
 ---
 
