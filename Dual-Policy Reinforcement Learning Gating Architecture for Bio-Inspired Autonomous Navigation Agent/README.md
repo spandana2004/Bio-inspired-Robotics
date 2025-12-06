@@ -48,6 +48,7 @@ Dual-Policy Reinforcement Learning Gating Architecture for Bio-Inspired Autonomo
 │   │── gating_final_hazards.py
 │   │── angles_to_goal.csv
 |   │── ego_vector_table.csv
+|   |
 │   │── hazard_comparison_run1/
 │   │   ├── density_0.10/
 │   │   │   ├── learning_curve_reward.png
