@@ -1,19 +1,19 @@
 # Dual-Policy Reinforcement Learning Gating Architecture for Bio-Inspired Autonomous Navigation
 
-This repository implements a **bio-inspired dual-policy navigation framework** for autonomous agents, combining:
+This repository implements a **bio-inspired dual-policy navigation framework** combining:
 
-* An **Egocentric policy** (local, sensory-based navigation)
-* A **Geocentric policy** (global, map-based navigation)
-* A **Gating Policy Network (GPN)** that adaptively selects between the two using reinforcement learning
+* **Egocentric Policy** (local reactive navigation)
+* **Geocentric Policy** (global map-based navigation)
+* **Gating Policy Network (GPN)** — a Deep Q-Network that dynamically switches between the two
 
-The architecture is designed to emulate biological navigation systems by dynamically switching between local reactive behavior and global goal-directed planning.
+The architecture draws inspiration from biological navigation systems that integrate **localized sensing** with **global orientation**, especially under varying environmental hazard densities.
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```
-Dual-Policy Reinforcement Learning Gating Architecture for Bio-Inspired Autonomous Navigation Agent/
+Dual-Policy Reinforcement Learning Gating Architecture for Bio-Inspired Autonomous Navigation/
 │
 ├── Egocentric_policy_framework/
 │   ├── all_pattern_learn.py
@@ -39,178 +39,182 @@ Dual-Policy Reinforcement Learning Gating Architecture for Bio-Inspired Autonomo
 │   ├── policy_dist_curve.png
 │   ├── policy_map_test.png
 │   ├── trajectory_test.png
-│   └── policy_map_train_maze_*.png
+│   ├── policy_map_train_maze_1.png
+│   ├── policy_map_train_maze_2.png
+│   ├── policy_map_train_maze_3.png
+│   ├── ... (up to maze_10)
 │
-└── (visualization and experimental result files)
+│   ├── experimental_results/              ← ADDED FROM ZIP
+│   │
+│   │── hazard_comparison_run1/
+│   │   ├── density_0.10/
+│   │   │   ├── learning_curve_reward.png
+│   │   │   ├── training_loss_curve.png
+│   │   │   ├── performance_vs_density.png
+│   │   │   ├── policy_dist_bar.png
+│   │   │   ├── policy_dist_curve.png
+│   │   │   ├── policy_map_train_maze_1.png ... maze_10.png
+│   │   ├── density_0.20/
+│   │   ├── density_0.40/
+│   │   └── density_0.60/
+│   │
+│   │── hazard_comparison_run2/
+│   │   └── (same density folders and files)
+│   │
+│   │── hazard_comparison_run3/
+│       └── (same density folders and files)
+│
+│   └── final_iitm_simulation/             ← UNZIPPED ZIP CONTENTS
+│       └── (all runs + density plots, trajectories, policy maps)
+│
+└── README.md
+```
+
+This **fully integrated structure** includes all policy maps, learning curves, distribution plots, trajectories, and density-wise evaluation results.
+
+---
+
+# 🧠 System Overview
+
+## 1. Egocentric Policy
+
+Local, reactive navigation learned from **sensory vectors**.
+
+* Learns obstacle-aware motion patterns
+* Produces discretized action vectors
+* Generates egocentric trajectory plots
+
+**Key Files:**
+`all_pattern_learn.py`, `mapping_vectors_for_test_maze.py`, `ego_vector_table.csv`
+
+---
+
+## 2. Geocentric Policy
+
+Global, map-based navigation using **grid-world geometry**.
+
+* Calculates target angles
+* Generates optimal or near-optimal global paths
+
+**Key Files:**
+`geocentric_grid.py`, `geocentric_final_trajectory_generator.py`, `angles_to_goal.csv`
+
+---
+
+## 3. Gating Policy Network (Deep Q-Network)
+
+The core controller that **chooses** between Egocentric and Geocentric actions based on learned Q-values.
+
+* Learns switching behavior using reinforcement learning
+* Responds to hazard density and environment configuration
+* Provides combined navigation performance
+
+**Outputs include:**
+
+* Reward learning curve
+* Training loss curve
+* Policy distribution analysis
+* Trajectories & heatmaps
+* Performance vs hazard density
+* Maze-wise policy maps (1–10)
+* Multi-run (1–3) & multi-density (0.10–0.60) comparisons
+
+All extended results from your ZIP are stored in:
+
+```
+Gating_Policy_Network/experimental_results/
 ```
 
 ---
 
-## 🧠 System Overview
+# ⚙️ Installation
 
-### 1. Egocentric Policy
-
-* Learns navigation behavior based purely on **local sensory vectors**.
-* Generates discretized movement vectors for obstacle avoidance.
-* Key files:
-
-  * `all_pattern_learn.py`
-  * `mapping_vectors_for_test_maze.py`
-  * `ego_vector_table.csv`
-
-### 2. Geocentric Policy
-
-* Performs **global, goal-oriented planning** based on a grid-world map.
-* Computes angles and trajectories to the target.
-* Key files:
-
-  * `geocentric_grid.py`
-  * `geocentric_final_trajectory_generator.py`
-  * `angles_to_goal.csv`
-
-### 3. Gating Policy Network (DQN)
-
-* A **Deep Q-Network (PyTorch)** that decides whether to use:
-
-  * Egocentric policy **or**
-  * Geocentric policy
-* Learns from environment density and navigation performance.
-* Key files:
-
-  * `gating_policy.py`
-  * `gating_model_pytorch.pth`
-
----
-
-## ⚙️ Installation
-
-### 1. Create a Python environment (recommended)
+### Create environment
 
 ```bash
 conda create -n dual_policy_nav python=3.9
 conda activate dual_policy_nav
 ```
 
-### 2. Install dependencies
+### Install dependencies
 
 ```bash
 pip install numpy matplotlib pandas torch
 ```
 
-> If you encounter missing packages, install them using `pip install <package>`.
-
 ---
 
-## ▶️ How to Run
+# ▶️ How to Run
 
-### 1. Egocentric Policy Learning
+## Egocentric Policy
 
 ```bash
 cd Egocentric_policy_framework
 python all_pattern_learn.py
-```
-
-For testing on a predefined maze:
-
-```bash
 python mapping_vectors_for_test_maze.py
 ```
 
-Outputs:
-
-* Discretized action maps
-* Final trajectory plots
-* Policy visualization
-
----
-
-### 2. Geocentric Navigation
+## Geocentric Policy
 
 ```bash
 cd Geocentric_policy_framework
 python geocentric_final_trajectory_generator.py
 ```
 
-Outputs:
-
-* Global policy maps
-* Final geocentric trajectory plots
-* Angle-to-goal tables
-
----
-
-### 3. Gating Policy Network (Main Controller)
+## Gating Policy Network
 
 ```bash
 cd Gating_Policy_Network
 python gating_policy.py
 ```
 
-This will:
-
-* Load the pretrained DQN (`gating_model_pytorch.pth`)
-* Run policy selection on different mazes
-* Evaluate performance vs obstacle density
-* Generate:
-
-  * Learning curves
-  * Training loss curves
-  * Policy distribution plots
-  * Test trajectories
-  * Policy heatmaps
+This loads the trained DQN (`gating_model_pytorch.pth`) and executes all evaluation routines.
 
 ---
 
-## 📊 Output Visualizations
+# 📊 Output Visualizations
 
-The framework automatically saves:
+Automatically generated:
 
-* **Agent trajectories**
-* **Policy maps (train & test)**
-* **Reward learning curves**
-* **Training loss curves**
-* **Policy selection distributions**
-* **Performance vs maze density plots**
-
-All outputs are saved inside the respective framework folders.
-
----
-
-## 🧪 Experimental Setup
-
-* Environment: Discrete grid-based maze
-* Actions: Discretized compass movements
-* Controller: Deep Q-Network (DQN)
-* Inputs to Gating Network:
-
-  * Local egocentric vectors
-  * Global goal direction
-  * Environmental density indicators
+* Agent trajectories
+* Policy maps (train & test)
+* Reward learning curves
+* Training loss curves
+* Policy selection distributions
+* Performance vs hazard density
+* Run-wise (1–3) and density-wise (0.10–0.60) comparisons
 
 ---
 
-## 📌 Key Features
+# 🧪 Experimental Setup
 
-* Hybrid bio-inspired navigation system
-* Adaptive switching between local and global policies
-* PyTorch-based deep reinforcement learning
-* Interpretable policy visualizations
-* Robust evaluation across multiple maze densities
-
----
-
-## 🧾 Model Files
-
-| File                       | Description                    |
-| -------------------------- | ------------------------------ |
-| `gating_model_pytorch.pth` | Trained gating policy DQN      |
-| `ego_vector_table.csv`     | Learned egocentric vectors     |
-| `angles_to_goal.csv`       | Geocentric angle look-up table |
+* Grid-based maze environment
+* Discrete compass movement actions
+* DQN-based gating mechanism
+* Evaluation across densities: **0.10, 0.20, 0.40, 0.60**
+* 10 distinct maze configurations per density
+* 3 independent runs for robustness
 
 ---
 
-## 🚧 Known Limitations
+# 📌 Key Features
 
-* Designed for **2D grid environments only**
-* Real-time robotics deployment is **not implemented**
-* Hyperparameters are fixed inside the scripts
+* Bio-inspired navigation intelligence
+* Dual-policy switching (local↔global) via reinforcement learning
+* Rich visualization suite
+* Generalization tests across many maze densities
+* Fully interpretable behavior analysis
+
+---
+
+# 🚧 Known Limitations
+
+* 2D environments only
+* No real-time robotics deployment
+* Hyperparameters fixed inside scripts
+
+---
+
+# 📬 Contact
+
+Feel free to submit an issue or contribute to improve the framework.
